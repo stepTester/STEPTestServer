@@ -1,5 +1,9 @@
 class TestsController < ApplicationController
 	def show
-		@ad = Test.find(params[:id])
+		@test = Test.find(params[:id])
+	end
+
+	def index
+		@tests = Test.find(:all)
 	end
 end

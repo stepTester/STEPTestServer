@@ -1,13 +1,13 @@
 <html>
 	<head>
-		<title>Test : <%=@ad.name %> </title>
+		<title>Test : <%=@test.name %> </title>
 	</head>
 	<body>
-		<p><b>Name:</b><%= @ad.name %></p>
-		<p><b>Environment:</b><%= @ad.environment %></p>
-		<p><b>Portal:</b><%= @ad.portal %></p>
-		<p><b>Browser:</b><%= @ad.browser %></p>
-		<p><b>Result:</b><%= @ad.result %></p>
-		<p><b>Details:</b><%= @ad.details %></p>
+		<p><b>Name: </b><%= @test.name %></p>
+		<p><b>Environment: </b><%= @test.environment %></p>
+		<p><b>Portal: </b><%= @test.portal %></p>
+		<p><b>Browser: </b><%= @test.browser %></p>
+		<p><b>Result: </b><%= @test.result %></p>
+		<p><b>Details: </b><%= @test.details %></p>
 	</body>
 </html>
