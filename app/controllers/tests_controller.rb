@@ -6,4 +6,14 @@ class TestsController < ApplicationController
 	def index
 		@tests = Test.find(:all)
 	end
+
+	def create
+		@test = Test.new
+	end
+
+	def run
+		@test = Test.new(params[:test])
+		@test.save
+		#run test here and then save result
+	end
 end

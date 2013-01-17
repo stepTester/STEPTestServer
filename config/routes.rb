@@ -59,5 +59,7 @@ STEPTestingServer::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
  
   match "tests/" => "tests#index"
+  match "tests/create" => "tests#create"
+  match "tests/run" => "tests#run"
   match "/tests/:id" => "tests#show"
 end

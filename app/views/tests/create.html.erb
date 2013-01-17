@@ -1,0 +1,10 @@
+<h1>New Test</h1>
+
+<%=  form_for @test, :url=>{:action=>"run"} do |f| %>
+	<p><b>Name</b><br /><%= f.text_field :name %></p>
+	<p><b>Environment</b><br /><%= f.text_field :environment %></p>
+	<p><b>Portal</b><br /><%= f.text_field :portal %></p>
+	<p><b>Browser</b><br /><%= f.text_field :browser %></p>
+	<p><b>Details</b><br /><%= f.text_area :details %></p>
+	<p><%= f.submit "Start" %></p>
+<% end %>

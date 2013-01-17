@@ -1,14 +1,9 @@
-<html>
-	<head>
-		<title> All Tests </title>
-	</head>
 
-	<body>
-		<h1> All Tests </h1>
-		<ul>
-			<% for test in @tests %>
-				<li><a href="/tests/<%= test.id %>"><%= test.name %></a></li>
-			<% end %>
-		</ul>
-	</body>
-</html>
+<h1> All Tests </h1>
+<ul>
+	<% for test in @tests %>
+		<li><a href="/tests/<%= test.id %>"><%= test.name %></a>    <%= test.result %></li>
+	<% end %>
+</ul>
+<br></br>
+<a href="/tests/new">Create New Test</a>

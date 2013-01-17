@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Test : <%=@test.name %> </title>
+		<title>Test : <%=@test.id %> </title>
 	</head>
 	<body>
 		<p><b>Name: </b><%= @test.name %></p>
